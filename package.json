@@ -1,0 +1,23 @@
+{
+  "name": "custom-ui",
+  "version": "1.0.0",
+  "description": "Custom UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create:component": "plop component"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giangtran99/custom-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giangtran99/custom-ui/issues"
+  },
+  "homepage": "https://github.com/giangtran99/custom-ui#readme",
+  "dependencies": {
+    "plop": "^3.1.1"
+  }
+}
