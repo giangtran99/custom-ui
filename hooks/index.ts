@@ -1,5 +1,2 @@
-
-import useLatestState from "./useLatestState";
-
-
-export default useLatestState
+export { default as useLatestState } from './src/useLatestState';
+export { default as useCopyToClipboard } from './src/useCopyToClipboard';

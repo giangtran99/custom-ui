@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @custom-ui/CarouselBar
+yarn add @hoanggiangg199/CarouselBar
 # or
-npm i @custom-ui/CarouselBar
+npm i @hoanggiangg199/CarouselBar
 ```
 
 ## Contribution

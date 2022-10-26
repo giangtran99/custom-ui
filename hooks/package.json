@@ -1,11 +1,11 @@
 {
   "name": "@hoanggiangg199/hooks",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build":"tsc",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
@@ -21,10 +21,9 @@
     "url": "https://github.com/giangtran99/custom-ui/issues"
   },
   "homepage": "https://github.com/giangtran99/custom-ui#readme",
-  "dependencies": {
-
-  },
   "devDependencies": {
+    "@types/react": "^18.0.23",
+    "react": "^18.0.0",
     "typescript": "^4.8.4"
   }
 }

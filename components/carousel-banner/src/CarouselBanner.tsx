@@ -17,17 +17,19 @@
 
 
 
-import { FC, useEffect, useState } from 'react'
-import {useLatestState} from '@hoanggiangg199/hooks'
+import React,{ FC, useEffect, useState } from 'react'
+import { useLatestState } from '@hoanggiangg199/hooks'
 import { AddIcon } from '@chakra-ui/icons'
-import {getElipsisString} from '@hoanggiangg199/utilities'
+import { getElipsisString } from '@hoanggiangg199/utilities'
+import './input.css'
+
 interface CarouselBannerProps {
     autoPlay?: boolean
     listItems: any[]
 }
 
 
-const CarouselBanner: FC<CarouselBannerProps> = ({ listItems }) => {
+export default function  CarouselBanner ({ listItems }:CarouselBannerProps){
     const [currentItem, setCurrentItem] = useState<number>(1)
     const slideItem = (id: number) => {
         setCurrentItem(id)
@@ -126,4 +128,5 @@ const CarouselBanner: FC<CarouselBannerProps> = ({ listItems }) => {
 }
 
 
-export default CarouselBanner
+
+CarouselBanner.displayName = "CarouselBanner"

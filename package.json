@@ -1,23 +1,55 @@
 {
-  "name": "custom-ui",
+  "name": "@hoanggiangg199/custom-ui",
   "version": "1.0.0",
   "description": "Custom UI",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "create:component": "plop component"
+  "keywords": [
+    "CarouselBar"
+  ],
+  "author": "Giang Tran",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/giangtran99/custom-ui.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/giangtran99/custom-ui/issues"
   },
   "homepage": "https://github.com/giangtran99/custom-ui#readme",
+  "scripts": {
+    "build": "JSX=1 tsup src/index.ts --dts",
+    "dev": "pnpm build:fast -- --watch",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "build:fast": "tsup src/index.ts --format=esm,cjs",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.6",
+    "@types/react": "^18.0.23",
+    "clean-package": "2.1.1",
+    "react": "^18.2.0",
+    "tsup": "^6.3.0"
+  },
   "dependencies": {
-    "plop": "^3.1.1"
+    "@chakra-ui/icons": "^2.0.11",
+    "@chakra-ui/react": "^2.3.6",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@hoanggiangg199/hooks": "^1.0.5",
+    "@hoanggiangg199/utilities": "^1.0.1",
+    "find-up": "^6.3.0",
+    "typescript": "^4.8.4"
   }
 }

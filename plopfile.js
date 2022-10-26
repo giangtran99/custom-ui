@@ -51,7 +51,7 @@ module.exports = function main(plop) {
         base: "plop/component",
         data: { description, componentName, outDir },
         abortOnFail: true,
-      })
+      }) 
 
       return actions
     },

@@ -1,12 +1,11 @@
 {
-  "name": "@chakra-ui/CarouselBanner",
-  "version": "2.0.0",
+  "name": "@hoanggiangg199/carousel-banner",
+  "version": "1.0.5",
   "description": "Carousel Banner",
   "keywords": [
     "CarouselBanner"
   ],
-  "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/chakra-ui/chakra-ui#readme",
+  "author": "Giang Tran",
   "license": "MIT",
   "main": "src/index.ts",
   "sideEffects": false,
@@ -18,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chakra-ui/chakra-ui.git",
-    "directory": "packages/CarouselBanner"
+    "url": "git+https://github.com/giangtran99/custom-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/chakra-ui/chakra-ui/issues"
+    "url": "https://github.com/giangtran99/custom-ui/issues"
   },
+  "homepage": "https://github.com/giangtran99/custom-ui#readme",
   "scripts": {
-    "build": "tsup src/index.ts --format=esm,cjs --dts",
+    "build": "JSX=1 tsup src/index.ts --dts",
     "dev": "pnpm build:fast -- --watch",
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",
@@ -37,12 +36,20 @@
     "react": ">=18"
   },
   "devDependencies": {
+    "@types/node": "^18.11.6",
+    "@types/react": "^18.0.23",
+    "autoprefixer": "^10.4.12",
     "clean-package": "2.1.1",
-    "react": "^18.0.0"
+    "postcss": "^8.4.18",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.2.1",
+    "tsup": "^6.3.0"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
-    "@hoanggiangg199/hooks": "^1.0.1",
-    "@hoanggiangg199/utilities": "^1.0.1"
+    "@hoanggiangg199/hooks": "^1.0.5",
+    "@hoanggiangg199/utilities": "^1.0.1",
+    "find-up": "^6.3.0",
+    "typescript": "^4.8.4"
   }
 }
