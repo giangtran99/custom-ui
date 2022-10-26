@@ -1,0 +1,30 @@
+{
+  "name": "@hoanggiangg199/hooks",
+  "version": "1.0.2",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build":"tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giangtran99/custom-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giangtran99/custom-ui/issues"
+  },
+  "homepage": "https://github.com/giangtran99/custom-ui#readme",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

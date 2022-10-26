@@ -15,14 +15,12 @@
  * @see Theming https://chakra-ui.com/docs/theming/component-style
  */
 
-import * as React from "react"
 
 
 import { FC, useEffect, useState } from 'react'
-import useLatestState from '../../../hooks'
+import {useLatestState} from '@hoanggiangg199/hooks'
 import { AddIcon } from '@chakra-ui/icons'
-
-
+import {getElipsisString} from '@hoanggiangg199/utilities'
 interface CarouselBannerProps {
     autoPlay?: boolean
     listItems: any[]

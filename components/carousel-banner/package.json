@@ -39,5 +39,10 @@
   "devDependencies": {
     "clean-package": "2.1.1",
     "react": "^18.0.0"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.11",
+    "@hoanggiangg199/hooks": "^1.0.1",
+    "@hoanggiangg199/utilities": "^1.0.1"
   }
 }

@@ -2,6 +2,4 @@
 import useLatestState from "./useLatestState";
 
 
-export default {
-    useLatestState
-}
+export default useLatestState

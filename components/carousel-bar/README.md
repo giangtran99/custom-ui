@@ -1,4 +1,4 @@
-# @chakra-ui/CarouselBar
+# @custom-ui/CarouselBar
 
 A Quick description of the component
 
@@ -7,9 +7,9 @@ A Quick description of the component
 ## Installation
 
 ```sh
-yarn add @chakra-ui/CarouselBar
+yarn add @custom-ui/CarouselBar
 # or
-npm i @chakra-ui/CarouselBar
+npm i @custom-ui/CarouselBar
 ```
 
 ## Contribution
