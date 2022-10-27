@@ -2,6 +2,8 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./dist/**/*.{js,jsx,ts,tsx}",
+
   ],
   theme: {
     extend: {
@@ -34,7 +36,6 @@ module.exports = {
         'bp-2':{"max":'903px'},
         'bp-3':{"max":'961px'},
         'mobile':{"max":'841px'}
-        
       },
       fontSize: {
         'tiny': '.755rem'

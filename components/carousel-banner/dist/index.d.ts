@@ -1,6 +1,23 @@
 /**
  * 📝 Notes for Contributors:
  *
+ * - When creating an interactive component, we recommend creating hooks that
+ * handles accessibility, state management, and behavior concerns.
+ *
+ * - Hooks should return prop-getters and some state information.
+ *
+ * > If you're not creating an interactive component, you can delete this file.
+ *
+ * @see https://chakra-ui.com/guides/component-guide
+ */
+interface UseCarouselBannerProps {
+}
+declare function useCarouselBanner(props: UseCarouselBannerProps): {};
+declare type UseCarouselBannerReturn = ReturnType<typeof useCarouselBanner>;
+
+/**
+ * 📝 Notes for Contributors:
+ *
  * - When creating an interactive component, we recommend consuming the
  * component hook created.
  *
@@ -19,9 +36,6 @@ interface CarouselBannerProps {
     autoPlay?: boolean;
     listItems: any[];
 }
-declare function CarouselBanner({ listItems }: CarouselBannerProps): JSX.Element;
-declare namespace CarouselBanner {
-    var displayName: string;
-}
+declare const CarouselBanner: ({ listItems }: CarouselBannerProps) => JSX.Element;
 
-export { CarouselBanner };
+export { CarouselBanner, UseCarouselBannerProps, UseCarouselBannerReturn, useCarouselBanner };

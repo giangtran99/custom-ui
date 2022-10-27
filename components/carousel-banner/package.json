@@ -1,6 +1,6 @@
 {
   "name": "@hoanggiangg199/carousel-banner",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "Carousel Banner",
   "keywords": [
     "CarouselBanner"
@@ -8,7 +8,7 @@
   "author": "Giang Tran",
   "license": "MIT",
   "main": "src/index.ts",
-  "sideEffects": false,
+  "sideEffects": true,
   "files": [
     "dist"
   ],
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/giangtran99/custom-ui#readme",
   "scripts": {
-    "build": "JSX=1 tsup src/index.ts --dts",
+    "build": "JSX=1 tsup src/index.ts --minify --inject-style --dts",
     "dev": "pnpm build:fast -- --watch",
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",
@@ -42,7 +42,7 @@
     "clean-package": "2.1.1",
     "postcss": "^8.4.18",
     "react": "^18.2.0",
-    "tailwindcss": "^3.2.1",
+    "tailwindcss": "^3.1.0",
     "tsup": "^6.3.0"
   },
   "dependencies": {

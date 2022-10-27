@@ -17,7 +17,7 @@
 
 
 
-import React,{ FC, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLatestState } from '@hoanggiangg199/hooks'
 import { AddIcon } from '@chakra-ui/icons'
 import { getElipsisString } from '@hoanggiangg199/utilities'
@@ -29,7 +29,7 @@ interface CarouselBannerProps {
 }
 
 
-export default function  CarouselBanner ({ listItems }:CarouselBannerProps){
+export const CarouselBanner = ({ listItems }: CarouselBannerProps) => {
     const [currentItem, setCurrentItem] = useState<number>(1)
     const slideItem = (id: number) => {
         setCurrentItem(id)
@@ -53,7 +53,6 @@ export default function  CarouselBanner ({ listItems }:CarouselBannerProps){
 
         const id = setInterval(async () => {
             let latestCurrentItem = await useLatestState(setCurrentItem)
-            console.log("@@latestCurrentItem", latestCurrentItem)
             // console.log("@@currentItem",currentItem)
             let nextCurrentItem: number
             nextCurrentItem = latestCurrentItem + 1
@@ -123,10 +122,8 @@ export default function  CarouselBanner ({ listItems }:CarouselBannerProps){
             </div>
 
         </div>
-
     </>
 }
 
 
 
-CarouselBanner.displayName = "CarouselBanner"
