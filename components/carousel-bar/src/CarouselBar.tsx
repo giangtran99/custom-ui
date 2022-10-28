@@ -19,14 +19,14 @@ import React, { FC, useEffect, useRef, useState } from 'react'
 import { formatMoney, getElipsisString } from '@hoanggiangg199/utilities'
 import { Tag } from '@chakra-ui/tag'
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
-
+import './input.css'
 interface CarouselBarProps {
   autoPlay?: boolean
   listItems: any[]
   title: string,
 }
 
-export  function CarouselBar({ listItems, title = "Game On Sales" }: CarouselBarProps) {
+export const CarouselBar = ({ listItems, title = "Game On Sales" }: CarouselBarProps) => {
   const [itemsPerPage, setItemsPerPage] = useState(5)
   const numberOfPage = Math.ceil(listItems.length / itemsPerPage)
   const currentFrameRef = useRef(1)
@@ -164,4 +164,3 @@ export  function CarouselBar({ listItems, title = "Game On Sales" }: CarouselBar
   </>
 }
 
-CarouselBar.displayName = CarouselBar

@@ -31,14 +31,12 @@ declare type UseCarouselBarReturn = ReturnType<typeof useCarouselBar>;
  * @see Guide https://chakra-ui.com/guides/component-guide
  * @see Theming https://chakra-ui.com/docs/theming/component-style
  */
+
 interface CarouselBarProps {
     autoPlay?: boolean;
     listItems: any[];
     title: string;
 }
-declare function CarouselBar({ listItems, title }: CarouselBarProps): JSX.Element;
-declare namespace CarouselBar {
-    var displayName: typeof CarouselBar;
-}
+declare const CarouselBar: ({ listItems, title }: CarouselBarProps) => JSX.Element;
 
 export { CarouselBar, UseCarouselBarProps, UseCarouselBarReturn, useCarouselBar };
